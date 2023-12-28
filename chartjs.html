@@ -1,0 +1,57 @@
+<div class="card border-0">
+    <div class="card-body" style="position: relative;">
+      <canvas id="subjectChart" height="100"></canvas>
+    </div>
+  </div>
+  <script>
+    var data1 = {
+      // labels: [
+      //   'IT',
+      //   'ETC.'
+      // ],
+      datasets: [
+        {
+          type: 'doughnut',
+          data: [
+            { label: 'IT', nested: { value: 180 } },
+            { label: 'ETC', nested: { value: 180 } }
+          ],
+          label: ['IT', 'ETC.'],
+          hoverOffset: 20,
+          rotation: -180,
+        }
+      ]
+    }
+    var data2 = {
+
+    }
+    var chart = document.getElementById('subjectChart');
+    if (chart) {
+      new Chart(chart, {
+        type: 'doughnut',
+        data: data1,
+        options: {
+          cutout: '92%',
+          borderWidth: 0,
+          layout: {
+            padding: 50
+          },
+          parsing: {
+            label: 'label',
+            key: 'nested.value'
+          },
+          plugins: {
+            title: {
+              display: true,
+              text: 'test',
+            },
+            legend: {
+              display: true
+            }
+          },
+
+        },
+
+      });
+    }
+  </script>

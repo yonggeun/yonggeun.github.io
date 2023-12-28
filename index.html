@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en-us" data-bs-theme="auto">
+<html lang="en-us" data-bs-theme="dark">
 
 <head>
   <meta charset="utf-8">
@@ -13,13 +13,26 @@
   <!-- styles starts-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- @note fonts embeddings -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+KR">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif">
+
 
   <!-- import bootstrap styles and icons -->
   <script src="/assets/js/color-modes.js"></script>
+  <script async src="/assets/js/theme-toggle.js"></script>
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- import material icons -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
   <!-- styles ends -->
 
@@ -27,23 +40,24 @@
   <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
   <script src="assets/plugins/global/plugins.bundle.js"></script>
 
-
-
   <!-- chart.js ends -->
 
 
   <style>
     body {
       font-family: "IBM Plex Sans KR", sans-serif;
+      word-break: keep-all;
     }
 
+    h1,
+    h2,
     h3,
-    h4,
-    h5 {
-      font-family: "IBM Plex Sans Condensed", sans-serif;
-      font-weight: normal;
+    h4 {
+      font-family: "IBM Plex Serif", serif;
     }
 
+    h5,
+    h6,
     dt {
       font-family: "IBM Plex Sans Condensed", sans-serif;
       font-weight: 100;
@@ -72,8 +86,25 @@
       z-index: 1500;
     }
 
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 200,
+        'GRAD' -25,
+        'opsz' 24
+    }
+
+
     .bd-mode-toggle .dropdown-menu .active .bi {
       display: block !important;
+    }
+
+    [data-bs-theme="dark"] img[src*="light"] {
+      display: none;
+    }
+
+    [data-bs-theme="light"] img[src*="dark"] {
+      display: none;
     }
   </style>
 </head>
@@ -82,9 +113,10 @@
 
 <body>
 
-  <!-- Dismissing alert starts -->
-  <div class="alert alert-warning alert-dismissible fade show" role="alert">
-    <strong>Open to work</strong>. Check availibility Calendaer on my proz.com <a href="">availibility calendar</a>.
+  <!-- Dismissing alert starts @note alert -->
+  <div class="alert alert-warning alert-dismissible fade show border-0 g-0 gy-0 rounded-0" role="alert">
+    <span class="badge bg-success fw-bold">Open to work</span> Check availibility on my proz.com <a href="">availibility
+      calendar</a>.
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   </div>
   <!-- Dismissing alert ends -->
@@ -160,160 +192,282 @@
   <!-- theme changer ends -->
 
   <div class="container">
-    <div class="row">
+    <div class="row pt-2 pt-md-4">
       <!-- 1st col -->
-      <div class="col-lg-3">
-        <div class="row">
-          <h1 class="display-5">Yonggen Kim</h1>
-          <h3 class="text-secondary">Professional Korean Linguist (EN→KO)</h3>
-          <p class="text-success">
-            TRANSLATOR, PROOFREADER<br />
-            OVER 1,000,000 WORDS EXPERIENCE in LAST 3 YEARS<br />
-            IT, MARKETING, SOFTWARE DEVELOPMENT LOCALIZATION<br />
-          </p>
+      <div class="col-lg-4 text-lg-end">
+        <div class="row pb-3 pb-lg-5">
+          <h1 class="fs-2">Yonggeun Kim</h1>
+          <h4 class="">translator (EN→KO)</h4>
+          <p class="text-primary">TRANSLATION, PROOFREADING, LOCALIZATION</p>
+          <p class="text-secondary">IT, Marketing, Mass Communication, Art and social science, Finance</p>
         </div>
-        <div class="row">
-          <h3 class="border-info border-bottom text-primary">Contact</h3>
+
+        <!-- introduction @note contact -->
+
+        <div class="row pb-3">
+          <h4 class="fs-5 fw-light">Contact</h4>
           <address>
-            <a href="mailto:yonggeun@vizualizer.com" target="_blank" class="">
-              <i class="bi bi-envelope"></i>
-              yonggeun@vizualizer.com</a><br />
-            <a href="https://www.proz.com/profile/3682600" target="_blank">
-              <img src="https://sslcdn.proz.com/zf/images/proz-header-logo-sm.png" class="bi text-success"
-                style="max-height: 0.9rem; filter: grayscale(100%); margin:0rem 0.2rem;"></a>
-            <a href="https://www.linkedin.com/in/yongguen-kim/" target="_blank">
-              <img
-                src="https://content.linkedin.com/content/dam/me/brand/en-us/brand-home/logos/01-dsk-e8-v2.png.original.png"
-                class="bi text-success" style="max-height: 1.0rem; filter: grayscale(100%); margin:0rem 0.2rem"></a>
-            <a href="https://crowdin.com/profile/yonggeun" target="_blank">
-              <img src="https://crowdin.com/blog/assets/crowdin-logo.png" class="bi text-success"
-                style="max-height: 1.0rem; filter: grayscale(100%); margin:0rem 0.2rem"></a>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-decoration-none">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path
+                      d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                  </svg> yonggeun@vizualizer.com
+                </a>
+              </li>
+              <li>
+                <a href="https://www.proz.com/profile/3682600" target="_blank">
+                  <img src="https://sslcdn.proz.com/zf/images/proz-header-logo-sm.png" class="bi text-success"
+                    style="max-height: 0.9rem; filter: grayscale(100%); margin:0rem 0.2rem;"></a>
+                <a href="https://www.linkedin.com/in/yongguen-kim/" target="_blank">
+                  <img
+                    src="https://content.linkedin.com/content/dam/me/brand/en-us/brand-home/logos/01-dsk-e8-v2.png.original.png"
+                    class="bi text-success" style="max-height: 1.0rem; filter: grayscale(100%); margin:0rem 0.2rem"></a>
+                <a href="https://crowdin.com/profile/yonggeun" target="_blank">
+                  <img src="https://support.crowdin.com/assets/logos/core-logo/png/crowdin-core-logo-cDark.png"
+                    class="bi text-success" style="max-height: 1.1rem; filter: invert(20%); margin:0rem 0.2rem"></a>
+              </li>
           </address>
         </div>
       </div>
       <!-- 1st col ends -->
 
       <!-- 2nd col -->
-      <div class="col-lg-9">
-        <!-- contact & introduction -->
+      <div class="col-lg-8">
+        <!-- introduction @note Strength -->
         <div class="row">
-          <!-- contact -->
-          <div class="col-12 col-lg-3">
-            <h3 class="border-info border-bottom text-primary">Introduction</h3>
+          <div class="col-12 col-lg-2">
+            <h4 class="text-lg-end fs-3 fw-light">Strength</h4>
           </div>
-
-          <!-- introduction @note introduciton -->
-          <div class="col-12 col-lg-8 gy-4">
-            <p>I am a professional translator specialized in translating IT innovations. I studied Korean
-              Literature and Linguistics (B.A.) and Media Engineering (Ph. D.). My expertise in IT and media technology
-              assures
-              the accuracy of the translated text for clients and customers. As a native speaker, my proficiency
-              delivers
-              superior readability through my experienced linguistic knowledge for proofreading and editing. As a
-              founding
-              member and leader of the Korean Translation team at Marketing dept. of Oracle(NYSE: ORCL), I have
-              fulfilled my
-              responsibility for improving the quality of translation by:</p>
+          <div class="col-12 col-lg-9">
+            <h5 class="pt-2 ps-2">A native Korean translator majored IT and linguistics.</h5>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">Listing the essential linguistic resources for IT translations,</li>
-              <li class="list-group-item">Establishing terminology management rules,</li>
-              <li class="list-group-item">Training new translators in the use of translation software and other relevant
-                tools</li>
-              <li class="list-group-item">Chairing bi-weekly stakeholder meetings to achieve breakthroughs for all
-                participants,</li>
-              <li class="list-group-item">and performing duties for managerial requirements, and so on.</li>
+              <li class="list-group-item d-flex justify-content-between align-items-start border-0">
+                <div class="ms-2 me-auto">
+                  <h5 class="fs-5 text-success-emphasis"><span class="material-symbols-outlined align-top">
+                      ads_click
+                    </span> Clear and accurate</h5>
+                  <p class=""><span class="fw-bold">The state-of-the-art innovaiton settles on a lucid and
+                      comprehensible translation as you engineered.</span> My experties in Korean Literature and
+                    Linguistics (B.A.) and Media Engineering (Ph. D.) assures the accuracy and clarity of the translated
+                    text for clients and customers.</p>
+                </div>
+              </li>
+
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <h5 class="fs-5 text-success-emphasis"><span class="material-symbols-outlined align-top">
+                      bolt
+                    </span> Effective and punctual</h5>
+                  <p class=""><span class="fw-bold">Over 1,000,000 words expertise in translation project mangement
+                      delivers your advance in Korean right on time.</span>
+                    I succussefuly completed numerous projects and achieved managerial goals in my previous career
+                    inclduing Oracle and so on.</p>
+
+                </div>
+              </li>
+
             </ul>
-            <p>Thank you.</p>
           </div>
         </div>
         <!-- contact & introduction ends -->
 
         <!-- service @note service section -->
         <div class="row">
-          <div class="col-12 col-lg-3">
-            <h3 class="border-info border-bottom text-primary">Service</h3>
+          <!-- @note service heading -->
+          <div class="col-12 col-lg-2">
+            <h4 class="text-lg-end fs-3 fw-light">Service</h4>
+
           </div>
-          <!-- title -->
-
-          <div class="col-6 col-lg-4 gy-lg-4">
-            <h5 class="text-secondary-emphasis">Language and fluency</h5>
+          <!-- @note service content -->
+          <div class="col-6 col-lg-4 m-lg-2">
+            <h6 class="fw-bold">Language</h6>
             <dl class="row">
-              <dt class="col-12 col-lg-6 text-info">Source Language</dt>
-              <dd class="col-12 col-lg-6">English (US)<br />
-                Full professional proficiency</dd>
+              <dt class="col-5 col-lg-4 text-primary">Source</dt>
+              <dd class="col-7 col-lg-8">English (US)</dd>
 
-              <dt class="col-12 col-lg-6 text-info">target language</dt>
-              <dd class="col col-lg-6"><mark>Korean-native</mark></dd>
+              <dt class="col-5 col-lg-4 text-primary">Target</dt>
+              <dd class="col-7 col-lg-8">Korean (native)</dd>
             </dl>
           </div>
 
-          <div class="col-6 col-lg-4 gy-lg-4">
-            <h5 class="text-secondary-emphasis">Capacity<sup>*</sup></h5>
+          <div class="col-6 col-lg-4 m-lg-2">
+            <h6 class="fw-bold">Capacity</h6>
             <dl class="row">
-              <dt class="col-12 col-lg-6 text-info">translation</dt>
-              <dd class="col-12 col-lg-6"><mark>2,000</mark></dd>
-              <dt class="col-12 col-lg-6 text-info">proofreading</dt>
-              <dd class="col-12 col-lg-6">5,000</dd>
-              <dt class="col-12 col-lg-6 text-info">MTPE</dt>
-              <dd class="col-12 col-lg-6">4,000</dd>
-
-              <small><sup>*</sup>words per day.</small>
+              <dt class="col-5 col-lg-5 text-primary">translation</dt>
+              <dd class="col-7 col-lg-7">2,000</dd>
+              <dt class="col-5 col-lg-5 text-primary">proofreading</dt>
+              <dd class="col-7 col-lg-7">5,000</dd>
+              <dt class="col-5 col-lg-5 text-primary">MTPE</dt>
+              <dd class="col-7 col-lg-7">4,000</dd>
             </dl>
           </div>
         </div>
 
-        <!-- chart @note chart -->
+        <!-- @note subject matter & chart -->
         <div class="row">
-          <div class="col-12 col-lg-3">
+          <!-- @note spacer -->
+          <div class="col-12 col-lg-2">
           </div>
-          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          <div class="col-12 col-lg-8 m-lg-2">
+            <h6 class="fw-bold">Subject Matter</h6>
+            <figure>
+              <img src="expertise-mapping.circle.light.svg" class="img-fluid ps-2 pe-2 pb-2">
+              <img src="expertise-mapping.dark.svg" class="img-fluid p-2">
+              <figcaption class="figure-caption text-center">1 million words translation & proofreading by subject
+                matter</figcaption>
+            </figure>
 
-          <div class="col-12 col-lg-8 gy-lg-4">
-            <div class="card">
-              <div class="card-body">
-                <canvas id="subjectChart" height="100"></canvas>
+            <div class="row">
+              <div class="accordion accordion-flush" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h7 class="accordion-header">
+                    <button class="accordion-button text-primary p-1 m-0 bg-body" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                      aria-controls="panelsStayOpen-collapseOne"><i class="bi bi-server"></i>&nbsp;IT Infrastructure
+                    </button>
+                  </h7>
+                  <!-- list down key translations for each category -->
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                      <dl class="row">
+                        <dt class="col-3 text-primary">Hardware</dt>
+                        <dd class="col-9">
+                          <ul class="list-unstyled">
+                            <li>Desktop computers
+                            </li>
+                            <li>Servers
+                            </li>
+                            <li>Data centers
+                            </li>
+                            <li>Hubs, Routers, Switches
+                            </li>
+                            <li>Facilities</li>
+                          </ul>
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseTwo">
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                      collapse plugin adds the appropriate classes that we use to style each element. These classes
+                      control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                      modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                      that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                      does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseThree">
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                      collapse plugin adds the appropriate classes that we use to style each element. These classes
+                      control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                      modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                      that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                      does limit overflow.
+                    </div>
+                  </div>
+
+
+                </div>
+                <!-- 
+
+ -->
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseFive">
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                      collapse plugin adds the appropriate classes that we use to style each element. These classes
+                      control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                      modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                      that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                      does limit overflow.
+                    </div>
+                  </div>
+
+
+                </div>
               </div>
-            </div>
-            <script>
-              var chartData = {
-                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                datasets: [{
-                  label: '# of Votes',
-                  data: [12, 19, 3, 5, 2, 3],
-                  borderWidth: 1
-                }]
-              };
-              var chart = document.getElementById('subjectChart');
-              if (chart) {
-                new Chart(chart, {
-                  type: 'bar',
-                  data: chartData,
-                  option: {
-                    scales: {
-                      y: {
-                        beginAtZero: true
-                      }
-                    }
-                  }
-                });
-              }
-            </script>
-          </div>
-        </div>
-        <!-- chart ends -->
 
-        <!-- @note subject matter -->
-        <div class="row">
-          <div class="col-12 col-lg-3">
-          </div>
-          <div class="col-12 col-lg-8 gy-lg-4">
-            <h5 class="text-secondary-emphasis">Subject Matter</h5>
+            </div>
+
+
+
+
+
             <dl class="row">
-              <dt class="col-12 col-md-3 text-info">IT Technology</dt>
-              <dd class="col-12 col-md-9">Programming, Cloud computing, Infrastructure, Consumer Hardware, IoT, Computer
-                Graphics, Database, Networking, User Interface</dd>
-              <dt class="col-12 col-md-3 text-info">Computer Language</dt>
-              <dd class="col-12 col-md-9">Java, C++, Python, JavaScript, HTML, CSS</dd>
+              <dt class="col-12 col-md-3 text-black text-bg-primary bg-opacity-10">IT Infrastructure</dt>
+              <dd class="col-12 col-md-9">
+                <dl class="row fs-6">
+                  <dt class="col-3">Hardware</dt>
+                  <dd class="col-9">
+                    <ul class="list-unstyled">
+                      <li>Desktop computers
+                      </li>
+                      <li>Servers
+                      </li>
+                      <li>Data centers
+                      </li>
+                      <li>Hubs, Routers, Switches
+                      </li>
+                      <li>Facilities</li>
+                    </ul>
+                  </dd>
+                  <dt class="col-3">Software</dt>
+                  <dd class="col-9">
+                    <ul class="list-unstyled">
+                      <li>Content Mangement System (CMS)
+                      </li>
+                      <li>Customer Relationship Mangement (CRM)
+                      </li>
+                      <li>Enterprise Resource Planning (ERP)
+                      </li>
+                      <li>Operating Sytems
+                      </li>
+                      <li>Web Servers</li>
+                    </ul>
+                  </dd>
+                  <dt class="col-3">Network</dt>
+                  <dd class="col-9">Physical components serve the transmission of data within a group of connected
+                    computing equipments such as switches, routers, hubs and servers.
+                  </dd>
+                  <dt class="col-3">Cloud Infrastructure</dt>
+                  <dd class="col-9">A cloud computing IT infrastructure is the infrastructure where end-users access via
+                    the internet, with the ability to use computing resources without installing on-premises through
+                    virtualization.
+                  </dd>
+                </dl>
+
+              </dd>
             </dl>
           </div>
         </div>
@@ -324,7 +478,7 @@
           <div class="col-12 col-lg-3">
           </div>
           <div class="col-12 col-lg-8 gy-lg-4">
-            <h5 class="text-secondary-emphasis">Format</h5>
+            <h6 class="text-secondary-emphasis">Format</h6>
             <dl class="row">
               <dt class="col-12 col-md-3 text-info">Public Relation</dt>
               <dd class="col-12 col-md-9">Website, Press Release, Social Network Posting, Subtitling</dd>
@@ -341,7 +495,7 @@
           <div class="col-12 col-lg-3">
           </div>
           <div class="col-12 col-lg-8 gy-lg-4">
-            <h5 class="text-secondarya text-secondary-emphasis">Software </h5>
+            <h6 class="text-secondarya text-secondary-emphasis">Software </h6>
             <dl class="row">
               <dt class="col-12 col-md-3 text-info">Translation Tools</dt>
               <dd class="col-12 col-md-9">Trados Studio, memoQ, OmegaT, QTLinguist, Okapi applications, Smartcat,
@@ -370,13 +524,13 @@
         <!-- career header -->
         <div class="row">
           <div class="col-12 col-lg-3">
-            <h3 class="border-info border-bottom text-primary">Career</h3>
+            <h4 class="border-info  text-primary">Career</h4>
           </div>
           <!-- career header ends -->
 
           <!-- education -->
           <div class="col-12 col-lg-8 gy-lg-4">
-            <h5 class="text-secondary-emphasis">Subject Matter</h5>
+            <h6 class="text-secondary-emphasis">Subject Matter</h6>
             <dl class="row">
               <dt class="col-12 col-md-3 text-info">IT Technology</dt>
               <dd class="col-12 col-md-9">Programming, Cloud computing, Infrastructure, Consumer Hardware, IoT,
@@ -390,17 +544,17 @@
           <!-- subject matter ends -->
           <!-- Career Ends -->
 
-          <!-- Skills -->
+          <!-- Skills @note skills-->
           <!-- skills header -->
           <div class="row">
             <div class="col-12 col-lg-3">
-              <h3 class="border-info border-bottom text-primary">Skills</h3>
+              <h4 class="border-info  text-primary">Skills</h4>
             </div>
             <!-- skills header ends -->
 
             <!-- education -->
             <div class="col-12 col-lg-8 gy-lg-4">
-              <h5 class="text-secondary-emphasis">Subject Matter</h5>
+              <h6 class="text-secondary-emphasis">Subject Matter</h6>
               <dl class="row">
                 <dt class="col-12 col-md-3 text-info">IT Technology</dt>
                 <dd class="col-12 col-md-9">Programming, Cloud computing, Infrastructure, Consumer Hardware, IoT,
@@ -427,7 +581,8 @@
       <div class="container">
         <footer class="d-flex justify-content-between align-items-center py-3 my-4 border-top">
           <div class="col-md-4 d-flex align-items-center">
-            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"><i class="bi bi-bootstrap-fill"></i></a>
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"><i
+                class="bi bi-bootstrap-fill"></i></a>
             <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2023 김용근 / Yonggeun Kim</span>
           </div>
 
@@ -468,6 +623,7 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>
