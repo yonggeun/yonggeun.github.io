@@ -22,7 +22,10 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+KR">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif">
-
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif" rel="stylesheet">
 
   <!-- import bootstrap styles and icons -->
   <script src="/assets/js/color-modes.js"></script>
@@ -34,35 +37,36 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-  <!-- styles ends -->
-
-  <!-- Chart.js -->
-  <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
-  <script src="assets/plugins/global/plugins.bundle.js"></script>
-
-  <!-- chart.js ends -->
-
-
+  <!-- @note custom style started -->
   <style>
     body {
-      font-family: "IBM Plex Sans KR", sans-serif;
+      font-family: "Roboto", sans-serif;
       word-break: keep-all;
     }
 
     h1,
     h2,
-    h3,
-    h4 {
-      font-family: "IBM Plex Serif", serif;
+    h3
+    {
+      font-family: "Roboto Serif", serif;
     }
 
+    h4 {
+      font-family: "Roboto Slab", serif;
+    }
     h5,
     h6,
-    dt {
-      font-family: "IBM Plex Sans Condensed", sans-serif;
+    dt,
+    td {
+      font-family: "Roboto Condensed", sans-serif;
       font-weight: 100;
     }
 
+    /* 
+    h5 {
+      font-weight: bold;
+    } 
+    */
 
     .btn-bd-primary {
       /* color mode button styling */
@@ -107,19 +111,13 @@
       display: none;
     }
   </style>
+
+  <!-- @note custom style ends -->
 </head>
 
 <!-- @note body starts -->
 
 <body>
-
-  <!-- Dismissing alert starts @note alert -->
-  <div class="alert alert-warning alert-dismissible fade show border-0 g-0 gy-0 rounded-0" role="alert">
-    <span class="badge bg-success fw-bold">Open to work</span> Check availibility on my proz.com <a href="">availibility
-      calendar</a>.
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-  </div>
-  <!-- Dismissing alert ends -->
 
   <!-- @note theme changer -->
   <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
@@ -188,13 +186,20 @@
       </li>
     </ul>
   </div>
-
   <!-- theme changer ends -->
 
+  <!-- Dismissing alert starts @note alert -->
+  <div class="alert alert-warning alert-dismissible fade show border-0 g-0 gy-0 rounded-0 m-0" role="alert">
+    <span class="fw-bold bi-info-circle"> Open to work!</span> Check availibility on my proz.com <a href="">availibility
+      calendar</a>.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  <!-- Dismissing alert ends -->
+
   <div class="container">
-    <div class="row pt-2 pt-md-4">
+    <div class="row pt-lg-4">
       <!-- 1st col -->
-      <div class="col-lg-4 text-lg-end">
+      <div class="col col-lg-3 text-lg-end bg-body">
         <div class="row pb-3 pb-lg-5">
           <h1 class="fs-2">Yonggeun Kim</h1>
           <h4 class="">translator (EN→KO)</h4>
@@ -205,7 +210,7 @@
         <!-- introduction @note contact -->
 
         <div class="row pb-3">
-          <h4 class="fs-5 fw-light">Contact</h4>
+          <h5 class="fw-bold">Contact</h5>
           <address>
             <ul class="list-unstyled">
               <li>
@@ -238,38 +243,42 @@
       <div class="col-lg-8">
         <!-- introduction @note Strength -->
         <div class="row">
-          <div class="col-12 col-lg-2">
-            <h4 class="text-lg-end fs-3 fw-light">Strength</h4>
+          <div class="col-12 col-md-2">
+            <h4 class="text-lg-end fs-3">Strength</h4>
           </div>
-          <div class="col-12 col-lg-9">
-            <h5 class="pt-2 ps-2">A native Korean translator majored IT and linguistics.</h5>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item d-flex justify-content-between align-items-start border-0">
-                <div class="ms-2 me-auto">
-                  <h5 class="fs-5 text-success-emphasis"><span class="material-symbols-outlined align-top">
-                      ads_click
-                    </span> Clear and accurate</h5>
-                  <p class=""><span class="fw-bold">The state-of-the-art innovaiton settles on a lucid and
-                      comprehensible translation as you engineered.</span> My experties in Korean Literature and
-                    Linguistics (B.A.) and Media Engineering (Ph. D.) assures the accuracy and clarity of the translated
-                    text for clients and customers.</p>
-                </div>
-              </li>
+          <div class="col-12 col-md-10">
+            <!-- 1 -->
+            <h5 class="text-success-emphasis">
+              <span class="material-symbols-outlined align-top">
+                school</span>
+              Certified expert in IT and Korean
+            </h5>
 
-              <li class="list-group-item d-flex justify-content-between align-items-start">
-                <div class="ms-2 me-auto">
-                  <h5 class="fs-5 text-success-emphasis"><span class="material-symbols-outlined align-top">
-                      bolt
-                    </span> Effective and punctual</h5>
-                  <p class=""><span class="fw-bold">Over 1,000,000 words expertise in translation project mangement
-                      delivers your advance in Korean right on time.</span>
-                    I succussefuly completed numerous projects and achieved managerial goals in my previous career
-                    inclduing Oracle and so on.</p>
+            <p class="ms-3 text-body-secondary fw-bold">I have two academic degrees: B.A in Korean Literature and
+              Linguistics and Ph.D. in Media Engineering (Ph. D.). <span class="text-body-tertiary">I am
+                proficieint.</span></p>
 
-                </div>
-              </li>
+            <!-- 2 -->
+            <h5 class="text-success-emphasis">
+              <span class="material-symbols-outlined align-top">
+                ads_click</span>
+              Clear and accurate
+            </h5>
 
-            </ul>
+            <p class="ms-3 text-body-secondary fw-bold">The state-of-the-art innovaiton settles on a lucid and
+              comprehensible translation as engineered. <span class="text-body-tertiary"></span></p>
+
+            <!-- 3 -->
+            <h5 class="text-success-emphasis">
+              <span class="material-symbols-outlined align-top">
+                bolt</span>
+              Effective and punctual
+            </h5>
+
+            <p class="ms-3 text-body-secondary fw-bold">Over 1 million words expertise in translation project mangement
+              delivers your advance in Korean right on time. <span class="text-body-tertiary">I succussefully
+                completed numerous projects and achieved managerial goals in my previous career inclduing Oracle and so
+                on.</span></p>
           </div>
         </div>
         <!-- contact & introduction ends -->
@@ -277,31 +286,31 @@
         <!-- service @note service section -->
         <div class="row">
           <!-- @note service heading -->
-          <div class="col-12 col-lg-2">
+          <div class="col-12 col-md-2">
             <h4 class="text-lg-end fs-3 fw-light">Service</h4>
-
           </div>
+
           <!-- @note service content -->
-          <div class="col-6 col-lg-4 m-lg-2">
+          <div class="col-6 col-md-5">
             <h6 class="fw-bold">Language</h6>
             <dl class="row">
-              <dt class="col-5 col-lg-4 text-primary">Source</dt>
-              <dd class="col-7 col-lg-8">English (US)</dd>
+              <dt class="col-5 col-md-4 text-secondary">Source</dt>
+              <dd class="col-7 col-md-8">English (US)</dd>
 
-              <dt class="col-5 col-lg-4 text-primary">Target</dt>
-              <dd class="col-7 col-lg-8">Korean (native)</dd>
+              <dt class="col-5 col-md-4 text-secondary">Target</dt>
+              <dd class="col-7 col-md-8">Korean (native)</dd>
             </dl>
           </div>
 
-          <div class="col-6 col-lg-4 m-lg-2">
+          <div class="col-6 col-md-5">
             <h6 class="fw-bold">Capacity</h6>
             <dl class="row">
-              <dt class="col-5 col-lg-5 text-primary">translation</dt>
-              <dd class="col-7 col-lg-7">2,000</dd>
-              <dt class="col-5 col-lg-5 text-primary">proofreading</dt>
-              <dd class="col-7 col-lg-7">5,000</dd>
-              <dt class="col-5 col-lg-5 text-primary">MTPE</dt>
-              <dd class="col-7 col-lg-7">4,000</dd>
+              <dt class="col-5 col-md-5 text-secondary">translation</dt>
+              <dd class="col-7 col-md-7">2,000</dd>
+              <dt class="col-5 col-md-5 text-secondary">proofreading</dt>
+              <dd class="col-7 col-md-7">5,000</dd>
+              <dt class="col-5 col-md-5 text-secondary">MTPE</dt>
+              <dd class="col-7 col-md-7">4,000</dd>
             </dl>
           </div>
         </div>
@@ -309,13 +318,13 @@
         <!-- @note subject matter & chart -->
         <div class="row">
           <!-- @note spacer -->
-          <div class="col-12 col-lg-2">
+          <div class="col-12 col-md-2">
           </div>
-          <div class="col-12 col-lg-8 m-lg-2">
+          <div class="col-12 col-md-10">
             <h6 class="fw-bold">Subject Matter</h6>
             <figure>
               <img src="expertise-mapping.circle.light.svg" class="img-fluid ps-2 pe-2 pb-2">
-              <img src="expertise-mapping.dark.svg" class="img-fluid p-2">
+              <img src="expertise-mapping.circle.dark.svg" class="img-fluid ps-2 pe-2 pb-2">
               <figcaption class="figure-caption text-center">1 million words translation & proofreading by subject
                 matter</figcaption>
             </figure>
@@ -323,8 +332,8 @@
             <div class="row">
               <div class="accordion accordion-flush" id="accordionPanelsStayOpenExample">
                 <div class="accordion-item">
-                  <h7 class="accordion-header">
-                    <button class="accordion-button text-primary p-1 m-0 bg-body" type="button"
+                  <h7 class="accordion-header focus-ring-light">
+                    <button class="accordion-button text-primary-emphasis p-1 m-0 bg-body text-opacity-75" type="button"
                       data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
                       aria-controls="panelsStayOpen-collapseOne"><i class="bi bi-server"></i>&nbsp;IT Infrastructure
                     </button>
@@ -332,22 +341,27 @@
                   <!-- list down key translations for each category -->
                   <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
                     <div class="accordion-body">
-                      <dl class="row">
-                        <dt class="col-3 text-primary">Hardware</dt>
-                        <dd class="col-9">
-                          <ul class="list-unstyled">
-                            <li>Desktop computers
-                            </li>
-                            <li>Servers
-                            </li>
-                            <li>Data centers
-                            </li>
-                            <li>Hubs, Routers, Switches
-                            </li>
-                            <li>Facilities</li>
-                          </ul>
-                        </dd>
-                      </dl>
+                      <!--  -->
+
+                      <div class="table-responsive">
+                        <table class="table table-hover table-borderless table-sm fs-6">
+                          <thead>
+                            <tr>
+                              <th>Topic</th>
+                              <th>Title</th>
+                              <th>Format</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td><code>dispose</code></td>
+                              <td>Destroys an element&rsquo;s button. (Removes stored data on the DOM element)</td>
+                              <td></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+
                     </div>
                   </div>
                 </div>
