@@ -77,7 +77,11 @@
       word-break: keep-all;
     }
 
-    h1,
+    h1 {
+      font-family: "Roboto Serif", serif;
+      font-weight: bolder;
+    }
+
     h2,
     h3 {
       font-family: "Roboto Serif", serif;
@@ -85,6 +89,7 @@
 
     h4 {
       font-family: "Roboto Slab", serif;
+      font-weight: bold;
     }
 
     h5,
@@ -94,8 +99,8 @@
       font-weight: 100;
     }
 
-    td {
-      font-size: 90%;
+    .accordion-body td {
+      font-size: 0.95rem;
     }
 
     td a:link {
@@ -108,6 +113,7 @@
 
     td small {
       font-family: "Roboto Condensed", sans-serif;
+      font-size: small;
     }
 
     [data-bs-theme="dark"] img[src*="light"] {
@@ -205,7 +211,7 @@
       <!-- 1st col -->
       <div class="col col-lg-3 text-lg-end bg-body">
         <div class="row pb-3 pb-lg-5">
-          <h1 class="fs-2 fw-bold">Yonggeun Kim</h1>
+          <h1 class="fs-2">Yonggeun Kim</h1>
           <h3 class="text-primary">translator (EN→KO)</h3>
           <p class="text-primary">TRANSLATION, PROOFREADING, LOCALIZATION</p>
           <p class="text-secondary">Localize your IT innovation for Korean customers. Whichever your technology targets
@@ -295,10 +301,10 @@
         <!-- contact & introduction ends -->
 
         <!-- service @note service section -->
-        <div class="row">
+        <div class="row mt-4">
           <!-- @note service heading -->
           <div class="col-12 col-md-2">
-            <h4 class="text-lg-end fs-3 fw-light">Service</h4>
+            <h4 class="text-lg-end fs-3">Service</h4>
           </div>
 
           <!-- @note Partners -->
@@ -307,12 +313,11 @@
             <h6 class="fw-bold">Current Partners</h6>
             <ul class="list-unstyled">
               <li class="text-body-secondary"><a href="https://www.compasslanguages.com/" target="_blank"><img
-                    src="http://plunet.compasslanguages.com/pages/plunet_systemstyle/LogoLeft.png"
-                    class="bi text-success"
+                    src="/assets/img/logo-compass.png" class="bi"
                     style="max-height: 1.1rem; max-width: 60px; filter: invert(50%); margin:0.3rem"></a>
                 Compass Languages (USA)</li>
               <li class="text-body-secondary"><a href="https://en.gientech.com/" target="_blank"><img
-                    src="https://en.gientech.com/statics/home/images/logo2.png" class="bi"
+                    src="/assets/img/logo-gientech.png" class="bi"
                     style="max-height: 1.1rem; max-width: 60px; filter: invert(50%); margin:0.3rem"></a>
                 GienTech (China)
               </li>
@@ -372,14 +377,14 @@
                 <!-- accordion item 1 -->
                 <div class="accordion-item">
 
-                  <h6 class="accordion-header">
-                    <button class="accordion-button text-primary-emphasis p-1 m-0 bg-body text-opacity-75" type="button"
-                      data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                      aria-controls="panelsStayOpen-collapseOne">
+                  <div class="accordion-header">
+                    <h6 class="accordion-button text-body-secondary p-1 m-0 bg-body text-opacity-75 shadow-none"
+                      type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
+                      aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                       <i class="bi bi-server"></i>
                       &nbsp;IT Infrastructure
-                    </button>
-                  </h6>
+                    </h6>
+                  </div>
 
                   <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
                     <div class="accordion-body border-0">
@@ -387,9 +392,9 @@
                       <table class="table table-borderless table-hover table-sm fs-6">
                         <thead>
                           <tr>
-                            <th>Client</th>
-                            <th>Title</th>
-                            <th>Format</th>
+                            <th class="text-body-tertiary">Client</th>
+                            <th class="text-body-tertiary">Title</th>
+                            <th class="text-body-tertiary">Format</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -455,15 +460,15 @@
                 <!-- accordion item 2 -->
                 <div class="accordion-item">
 
-                  <h6 class="accordion-header">
-                    <button
-                      class="accordion-button text-primary-emphasis p-1 m-0 bg-body text-opacity-75 border-0 collapsed"
+                  <div class="accordion-header">
+                    <h6
+                      class="accordion-button text-body-secondary p-1 m-0 bg-body text-opacity-75 border-0 collapsed shadow-none"
                       type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
                       aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
                       <i class="bi bi-bank2"></i>
                       &nbsp;Finance
-                    </button>
-                  </h6>
+                    </h6>
+                  </div>
 
                   <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
                     <div class="accordion-body">
@@ -471,9 +476,9 @@
                       <table class="table table-borderless table-hover table-sm fs-6">
                         <thead>
                           <tr>
-                            <th>Client</th>
-                            <th>Title</th>
-                            <th>Format</th>
+                            <th class="text-body-tertiary">Client</th>
+                            <th class="text-body-tertiary">Title</th>
+                            <th class="text-body-tertiary">Format</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -520,14 +525,15 @@
                 <!-- accordion item 3 -->
                 <div class="accordion-item">
 
-                  <h6 class="accordion-header">
-                    <button class="accordion-button text-primary-emphasis p-1 m-0 bg-body text-opacity-75 collapsed"
+                  <div class="accordion-header">
+                    <h6
+                      class="accordion-button text-body-secondary p-1 m-0 bg-body text-opacity-75 shadow-none collapsed"
                       type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
                       aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
                       <i class="bi bi-cart-fill"></i>
                       &nbsp;e-commerce
-                    </button>
-                  </h6>
+                    </h6>
+                  </div>
 
                   <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
                     <div class="accordion-body">
@@ -535,9 +541,9 @@
                       <table class="table table-borderless table-hover table-sm fs-6">
                         <thead>
                           <tr>
-                            <th>Client</th>
-                            <th>Title</th>
-                            <th>Format</th>
+                            <th class="text-body-tertiary">Client</th>
+                            <th class="text-body-tertiary">Title</th>
+                            <th class="text-body-tertiary">Format</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -593,14 +599,15 @@
                 <!-- accordion item 4 -->
                 <div class="accordion-item">
 
-                  <h6 class="accordion-header">
-                    <button class="accordion-button text-primary-emphasis p-1 m-0 bg-body text-opacity-75 collapsed"
+                  <div class="accordion-header">
+                    <h6
+                      class="accordion-button text-body-secondary p-1 m-0 bg-body text-opacity-75 shadow-none collapsed"
                       type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive"
                       aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
                       <i class="bi bi-terminal-fill"></i>
                       &nbsp;UI/UX, API documentation
-                    </button>
-                  </h6>
+                    </h6>
+                  </div>
 
                   <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
                     <div class="accordion-body">
@@ -608,9 +615,9 @@
                       <table class="table table-borderless table-hover table-sm fs-6">
                         <thead>
                           <tr>
-                            <th>Client</th>
-                            <th>Title</th>
-                            <th>Format</th>
+                            <th class="text-body-tertiary">Client</th>
+                            <th class="text-body-tertiary">Title</th>
+                            <th class="text-body-tertiary">Format</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -632,14 +639,15 @@
                 <!-- accordion item 5 -->
                 <div class="accordion-item">
 
-                  <h6 class="accordion-header">
-                    <button class="accordion-button text-primary-emphasis p-1 m-0 bg-body text-opacity-75 collapsed"
+                  <div class="accordion-header">
+                    <h6
+                      class="accordion-button text-body-secondary p-1 m-0 bg-body text-opacity-75 shadow-none collapsed"
                       type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix"
                       aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
                       <i class="bi bi-file-earmark-text-fill"></i>
                       &nbsp;ETC.
-                    </button>
-                  </h6>
+                    </h6>
+                  </div>
                   <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
                     <div class="accordion-body">
                       TBA
@@ -692,122 +700,198 @@
 
 
 
-        <!-- @note Career -->
+        <!-- @note Career section starts-->
+        <div class="row mt-4">
 
-        <div class="row">
+          <!-- career heading open -->
           <div class="col-12 col-md-2">
             <h4 class="text-lg-end fs-3">Career</h4>
           </div>
+          <!-- career heading closed -->
 
-          <!-- @note list of strengths -->
+          <!-- career contents starts -->
           <div class="col-12 col-md-10">
 
-            <!-- work experience -->
-            <h6 class="fw-bold">
+            <!-- career work experience -->
+            <h6 class="fw-bold visually-hidden">
               <span class="material-symbols-outlined align-bottom">
                 badge</span>
               Work Experience
             </h6>
-            <table class="table table-borderless table-hover table fs-5">
+            <table class="table table-hover table-sm visually-hidden">
               <thead>
-                <tr>
-                  <th></th>
-                  <th></th>
-                  <th></th>
+                <tr class="visually-hidden">
+                  <th class="text-body-tertiary">Term</th>
+                  <th class="text-body-tertiary">Title</th>
+                  <th class="text-body-tertiary">Location</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td class="col-sm-1 col-md-2"><small>September 2022-</br>present</small></td>
-                  <td class="col-6">Freelance translator (EN → KO)</td>
-                  <td class="col-2 text-truncate" style="max-width: 96px;">
+                  <td class="col-3 text-body-secondary"><small>SEP 2022 - present</small></td>
+                  <td class="col">Freelance translator (EN→KO)</td>
+                  <td class="col-3 text-body-tertiary">
                     <small>Remote</small>
                   </td>
                 </tr>
 
                 <tr>
-                  <td class="col-sm-1 col-md-2"><small>February 2021 - </br>September 2022</small></td>
-                  <td class="col-6">Korean Translation Specialist, Oracle
+                  <td class="col-3 text-body-secondary"><small>FEB 2021 - SEP 2022</small></td>
+                  <td class="col">Korean Translation Specialist, Oracle
                   </td>
-                  <td class="col-2 text-truncate" style="max-width: 96px;">
+                  <td class="col-3 text-body-tertiary">
                     <small>Malaysia</small>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="col-3 text-body-secondary"><small>APR 2013 - MAY 2019</small></td>
+                  <td class="col">Lecturer,
+                    Faculty of Creative Multimedia,
+                    Multimedia University
+                  </td>
+                  <td class="col-3 text-body-tertiary">
+                    <small>Cyberjaya,</br>
+                      Malaysia</small>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="col-3 text-body-secondary"><small>MAR 2012 - MAR 2013</small></td>
+                  <td class="col">Postdoctoral Researcher, Global School of Media,
+                    Soongsil University
+                  </td>
+                  <td class="col-3 text-body-tertiary">
+                    <small>Seoul,</br>
+                      South Korea</small>
                   </td>
                 </tr>
 
 
               </tbody>
             </table>
-            <!-- education -->
+
+            <!-- employment heading -->
             <h6 class="fw-bold">
               <span class="material-symbols-outlined align-bottom">
-                school</span>
-              Education
+                badge</span>
+              Employment
             </h6>
+            <!-- employment heading closed -->
 
-            <!-- list down key translations for each category -->
+            <!-- work experience -->
             <div class="row">
-              <div class="accordion accordion-flush mb-3" id="accordionPanelsStayOpenExample">
+
+              <!-- employment accordion -->
+              <div class="accordion accordion-flush mb-3" id="careerwork">
+
                 <!-- accordion item 1 -->
                 <div class="accordion-item">
 
-                  <h6 class="accordion-header">
-                    <button class="accordion-button text-primary-emphasis p-1 m-0 bg-body text-opacity-75" type="button"
-                      data-bs-toggle="collapse" data-bs-target="#acc1" aria-expanded="true" aria-controls="acc1">
-                      <i class="bi bi-person-badge"></i>
-                      &nbsp;Work Experience
-                    </button>
-                  </h6>
+                  <div class="accordion-header">
+                    <p class="accordion-button collapsed text-body-secondary p-1 m-0 bg-body text-opacity-75 list-unstyled shadow-none"
+                      type="button" data-bs-toggle="collapse" data-bs-target="#work1" aria-expanded="false"
+                      aria-controls="work1">
+                      Korean Translation Specialist, Oracle Malaysia<br>
+                    <p class="small ms-1 text-body-tertiary">2021 FEB - 2022 SEP</p>
+                  </div>
 
-                  <div id="acc1" class="accordion-collapse collapse show">
-                    <div class="accordion-body border-0">
+                  <div id="work1" class="accordion-collapse collapse" data-bs-parent="#careerwork">
+                    <div class="accordion-body border-danger">
+                      <h6>Responsibilities</h6>
+                      <ol>
+                        <li>Top priority pages on oracle.com/kr including vendor management and quality assurance.</li>
+                        <li>Core marketing materials for new cloud products and services including campaign brochures,
+                          white-papers, analyst reports, press releases, blogs, etc.</li>
+                        <li>
+                          Subtitles for major Oracle event videos from keynotes to technical hands-on including Oracle
+                          Database World, Oracle Cloud Virtual Summit, customer spotlights, etc.</li>
+                      </ol>
 
-                      <table class="table table-borderless table-hover table-sm fs-6">
-                        <thead>
-                          <tr>
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td class="col-2 text-truncate" style="max-width: 96px;">
-                              <small>Remote</small>
-                            </td>
-                            <td class="col-6">Freelance translator (EN → KO)</td>
-                            <td class="col-sm-1 col-md-4"><small>September 2022- present</small></td>
-                          </tr>
+                      <h6>Major Achievements</h6>
+                      <ol>
+                        <li>Planned and led the 3 month intensive re-work of existing Korean translations for
+                          oracle.com/kr which resulted in the high praise from the head of Oracle Korea Marketing.</li>
 
-                          <tr>
-                            <td class="col-2 text-truncate" style="max-width: 96px;">
-                              <small>Malaysia</small>
-                            </td>
-                            <td class="col-6">Korean Translation Specialist, Oracle
-                            </td>
-                            <td class="col-sm-1 col-md-4"><small>February 2021 - September 2022</small></td>
-                          </tr>
+                        <li>Established the multiple style guides for different channels for optimal and effective
+                          engagement with customers.</li>
 
-                          <tr>
-                            <td class="text-truncate" style="max-width: 96px;">
-                              Korean Translation Specialist, Oracle
-                            </td>
-                            <td class="col-2"><small>Malaysia</small></td>
-                            <td class="col-5 col-md-4"><small>February 2021 - September 2022</small></td>
-                          </tr>
-                        </tbody>
-                      </table>
+                        <li>Established and improved the internal quality assurance workflow.</li>
 
+                        <li>Fixed the faulty translation memory with the machine-translation friendly entries based on
+                          how
+                          In-house Machine Translation system works.</li>
+
+                        <li>Create a automated workflow and relevant documentations to improve the internal translation
+                          platform, quality assurance workflow.</li>
+                      </ol>
                     </div>
+
                   </div>
                 </div>
+
+                <!-- accordion item 2 -->
+                <div class="accordion-item">
+
+                  <div class="accordion-header">
+                    <p class="accordion-button collapsed p-1 m-0 text-body-secondary text-opacity-75 list-unstyled shadow-none bg-body"
+                      type="button" data-bs-toggle="collapse" data-bs-target="#work2" aria-expanded="false"
+                      aria-controls="work2">
+                      Lecturer at Multimedia University, Malaysia<br>
+                    <p class="small ms-1 text-body-tertiary">2013 APR - 2019 MAY
+                    </p>
+                  </div>
+
+                  <div id="work2" class="accordion-collapse collapse" data-bs-parent="#careerwork">
+                    <div class="accordion-body">
+                      <h6>Responsibilities</h6>
+                      <ol>
+                        <li>Top priority pages on oracle.com/kr including vendor management and quality assurance.
+                        </li>
+                        <li>Core marketing materials for new cloud products and services including campaign brochures,
+                          white-papers, analyst reports, press releases, blogs, etc.</li>
+                        <li>
+                          Subtitles for major Oracle event videos from keynotes to technical hands-on including Oracle
+                          Database World, Oracle Cloud Virtual Summit, customer spotlights, etc.</li>
+                      </ol>
+
+                      <h6>Major Achievements</h6>
+                      <ol>
+                        <li>Planned and led the 3 month intensive re-work of existing Korean translations for
+                          oracle.com/kr which resulted in the high praise from the head of Oracle Korea Marketing.
+                        </li>
+
+                        <li>Established the multiple style guides for different channels for optimal and effective
+                          engagement with customers.</li>
+
+                        <li>Established and improved the internal quality assurance workflow.</li>
+
+                        <li>Fixed the faulty translation memory with the machine-translation friendly entries based on
+                          how
+                          In-house Machine Translation system works.</li>
+
+                        <li>Create a automated workflow and relevant documentations to improve the internal
+                          translation
+                          platform, quality assurance workflow.</li>
+                      </ol>
+                    </div>
+                  </div>
+
+
+
+
+                </div>
               </div>
+              <!-- emploment accordion closed -->
+
             </div>
-
-
+            <!-- work experience closed -->
 
           </div>
+          <!-- career content closed -->
+
         </div>
-        <!-- career header -->
+        <!-- career section closed -->
 
       </div>
       <!-- container closed -->
