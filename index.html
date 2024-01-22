@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta name="description" content="C.V Portfolio of English to Korean professional translator, Yonggeun Kim(김용근)">
-  <meta name="author" content="Yongguen Kim 김용근">
+  <meta name="author" content="Yonggeun Kim 김용근">
 
   <title>Yonggeun Kim</title>
 
@@ -22,7 +22,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Serif">
 
   <!-- @note import material icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
@@ -37,6 +37,7 @@
   <script src="/assets/js/color-modes.js"></script>
   <script async src="/assets/js/theme-toggle.js"></script>
 
+  <!-- @note custom styles -->
   <style>
     .btn-bd-primary {
       /* color mode button styling */
@@ -62,9 +63,9 @@
 
     .material-symbols-outlined {
       font-variation-settings:
-        'FILL' 0,
-        'wght' 200,
-        'GRAD' -25,
+        'FILL' 1,
+        'wght' 300,
+        'GRAD' 0,
         'opsz' 24
     }
 
@@ -78,7 +79,7 @@
     }
 
     h1 {
-      font-family: "Roboto Serif", serif;
+      font-family: "Roboto Serif", serif !important;
       font-weight: bolder;
     }
 
@@ -99,8 +100,27 @@
       font-weight: 100;
     }
 
+    h5,
+    h6 {
+      filter: opacity(85%);
+      margin-top: 0.25em;
+    }
+
+    .accordion-body {
+      background-color: var(--bs-tertiary-bg);
+    }
+
     .accordion-body td {
       font-size: 0.95rem;
+    }
+
+    table,
+    th,
+    tr,
+    td,
+    thead,
+    tbody {
+      background-color: rgba(0, 0, 0, 0.0) !important;
     }
 
     td a:link {
@@ -116,6 +136,10 @@
       font-size: small;
     }
 
+    #strengthListItem {
+      margin-left: 1.9em;
+    }
+
     [data-bs-theme="dark"] img[src*="light"] {
       display: none;
     }
@@ -127,8 +151,9 @@
 </head>
 
 <body>
-  <!-- @note BODY starts -->
-  <!-- @note theme changer -->
+  <!-- @note BODY ◥-->
+
+  <!-- @note theme changer ◥ -->
   <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
     <symbol id="check2" viewBox="0 0 16 16">
       <path
@@ -195,25 +220,34 @@
       </li>
     </ul>
   </div>
-  <!-- theme changer ends -->
+  <!-- @note theme changer ◢ -->
 
-  <!-- Dismissing alert starts @note alert -->
+  <!-- @note dismissing alert ◥ -->
   <div class="alert alert-warning alert-dismissible fade show border-0 g-0 gy-0 rounded-0 m-0" role="alert">
-    <span class="fw-bold bi-info-circle">
-      Open to work!</span> Check availibility on my proz.com <a href="">availability
-      calendar</a>.
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    <div class="container text-center">
+      <span class="material-symbols-outlined align-bottom">
+        screen_search_desktop</span>
+      Open to work! Check availibility calendar on my proz.com. <span class="material-symbols-outlined align-bottom visually-hidden">
+          calendar_month</span>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
   </div>
-  <!-- Dismissing alert ends -->
+  <!-- @note dismissing alert ◢ -->
 
+  <!-- @note ▢ MAIN CONTAINTER ◥ -->
   <div class="container">
+
+    <!-- @note ▣ PAGE ◥ -->
     <div class="row pt-3 pt-lg-4">
-      <!-- 1st col -->
+
+      <!-- @note ◧ LEFT COL ◥ -->
       <div class="col col-lg-3 text-lg-end bg-body">
-        <div class="row pb-3 pb-lg-5">
+
+        <!-- @note ◧ Title -->
+        <div class="row pb-3 pb-lg-3">
           <h1 class="fs-2">Yonggeun Kim</h1>
-          <h3 class="text-primary">translator (EN→KO)</h3>
-          <p class="text-primary">TRANSLATION, PROOFREADING, LOCALIZATION</p>
+          <h3 class="text-success-emphasis">translator (EN→KO)</h3>
+          <p class="text-success">TRANSLATION, PROOFREADING, LOCALIZATION</p>
           <p class="text-secondary">Localize your IT innovation for Korean customers. Whichever your technology targets
             any point of IT service pipeline, ranging from infrastructure to application developmen
 
@@ -223,10 +257,9 @@
           </p>
         </div>
 
-        <!-- introduction @note contact -->
-
+        <!-- @note ◧ contact -->
         <div class="row pb-3">
-          <h5 class="fw-bold">Contact</h5>
+          <h5>Contact</h5>
           <address>
             <ul class="list-unstyled">
               <li>
@@ -252,18 +285,25 @@
               </li>
           </address>
         </div>
-      </div>
-      <!-- 1st col ends -->
+        <!-- ◧ contact closed -->
 
-      <!-- 2nd col -->
-      <div class="col-lg-8">
-        <!-- introduction @note Strength -->
+      </div>
+      <!-- @note ◧ LEFT COL ◢ -->
+
+      <!-- @note ◨ RIGHT COL ◥ -->
+      <div class="col-lg-9">
+
+        <!-- @note ◨ RIGHT < content ◥ -->
         <div class="row">
+
+          <!-- @note ▯▮▯ STRENGTH Header ◥ -->
           <div class="col-12 col-md-2">
             <h4 class="text-lg-end fs-3">Strength</h4>
           </div>
-          <!-- @note list of strengths -->
-          <div class="col-12 col-md-10">
+          <!-- @note ▯▮▯ STRENGTH Header ◢ -->
+
+          <!-- @note ▯▯▮ STRENGTH List Items ◥ -->
+          <div class="col-12 col-md-8">
             <!-- 1 -->
             <h5 class="text-success-emphasis">
               <span class="material-symbols-outlined align-top">
@@ -271,7 +311,8 @@
               Certified expert in IT and Korean
             </h5>
 
-            <p class="ms-3 text-body-secondary fw-bold">I have two academic degrees: B.A in Korean Literature and
+            <p class="text-body-secondary fw-bold" id="strengthListItem">I have two academic degrees: B.A in Korean
+              Literature and
               Linguistics and Ph.D. in Media Engineering (Ph. D.). <span class="text-body-tertiary">I am
                 proficieint.</span></p>
 
@@ -282,7 +323,8 @@
               Clear and accurate
             </h5>
 
-            <p class="ms-3 text-body-secondary fw-bold">The state-of-the-art innovaiton settles on a lucid and
+            <p class="text-body-secondary fw-bold" id="strengthListItem">The state-of-the-art innovaiton settles on a
+              lucid and
               comprehensible translation as engineered. <span class="text-body-tertiary"></span></p>
 
             <!-- 3 -->
@@ -292,56 +334,73 @@
               Effective and punctual
             </h5>
 
-            <p class="ms-3 text-body-secondary fw-bold">Over 1 million words expertise in translation project mangement
+            <p class="text-body-secondary fw-bold" id="strengthListItem">Over 1 million words expertise in translation
+              project mangement
               delivers your advance in Korean right on time. <span class="text-body-tertiary">I succussefully
                 completed numerous projects and achieved managerial goals in my previous career inclduing Oracle and so
                 on.</span></p>
           </div>
-        </div>
-        <!-- contact & introduction ends -->
+          <!-- @note ▯▯▮ STRENGTH List Items ◢ -->
 
-        <!-- service @note service section -->
-        <div class="row mt-4">
-          <!-- @note service heading -->
+          <!-- @note ▯▮▯ SERVICE header ◥ -->
+          <!-- spacer -->
+          <div class="col-12 col-md-2"></div>
           <div class="col-12 col-md-2">
             <h4 class="text-lg-end fs-3">Service</h4>
           </div>
+          <!-- @note ▯▮▯ SERVICE header ◢ -->
 
-          <!-- @note Partners -->
-
+          <!-- @note ◨ SERVICE > current partners ◥ -->
           <div class="col-12 col-md-10">
-            <h6 class="fw-bold">Current Partners</h6>
-            <ul class="list-unstyled">
-              <li class="text-body-secondary"><a href="https://www.compasslanguages.com/" target="_blank"><img
-                    src="/assets/img/logo-compass.png" class="bi"
-                    style="max-height: 1.1rem; max-width: 60px; filter: invert(50%); margin:0.3rem"></a>
-                Compass Languages (USA)</li>
-              <li class="text-body-secondary"><a href="https://en.gientech.com/" target="_blank"><img
-                    src="/assets/img/logo-gientech.png" class="bi"
-                    style="max-height: 1.1rem; max-width: 60px; filter: invert(50%); margin:0.3rem"></a>
-                GienTech (China)
-              </li>
-            </ul>
+            <h5>Current Partners</h5>
+
+            <div class="col-12 btn-group btn-group-sm mb-2 " role="group" aria-label="Small button group">
+              <a role="button" class="btn col-1 col-xxl-1 btn bg-dark-subtle" href="https://www.compasslanguages.com/"
+                target="_blank">
+                <img src="/assets/img/logo-compass.light.png" style="max-height: 1.0rem; margin: 0.3rem;">
+                <img src="/assets/img/logo-compass.dark.png" style="max-height: 1.0rem; margin: 0.3rem;"></a>
+              <a role="button" class="btn col-6 bg-body-tertiary mb-0 text-info" href="https://www.compasslanguages.com/"
+                target="_blank">
+                Compass Languages (USA) <i class="bi bi-box-arrow-up-right"></i></a>
+            </div>
+
+
+            <div class="col-12 btn-group btn-group-sm mb-2" role="group" aria-label="Small button group">
+              <a role="button" class="btn col-1 col-xxl-1 btn bg-dark-subtle" href="https://en.gientech.com/"
+                target="_blank">
+                <img src="/assets/img/logo-gientech.light.png" style="max-height: 1.0rem; margin: 0.3rem;">
+                <img src="/assets/img/logo-gientech.dark.png" style="max-height: 1.0rem; margin: 0.3rem;"></a>
+              <a role="button" class="btn col-6 bg-body-tertiary mb-0 text-info" href="https://en.gientech.com/" target="_blank">
+                GienTech (China) <i class="bi bi-box-arrow-up-right"></i></a>
+            </div>
+
           </div>
+          <!-- @note ◨ SERVICE > current partners ◢ -->
 
+          <!-- @note ◨ SERVICE > lang n capacity ◥ -->
 
-          <!-- @note service start-->
+          <!-- spacer -->
+          <div class="col-12 col-md-2"></div>
 
-          <div class="col-12 col-md-2">
-          </div>
-
+          <!-- @note ▯▯▮ SERVICE > language ◥ -->
           <div class="col-6 col-md-5">
-            <h6 class="fw-bold">Language</h6>
+
+            <h5>Language</h5>
+
             <dl class="row">
               <dt class="col-5 col-md-4 text-secondary">Source</dt>
               <dd class="col-7 col-md-8">English (US)</dd>
-
               <dt class="col-5 col-md-4 text-secondary">Target</dt>
               <dd class="col-7 col-md-8">Korean (native)</dd>
             </dl>
           </div>
+          <!-- @note ▯▯▮ SERVICE > language ◢ -->
+
+          <!-- @note ▯▯▮ SERVICE > capacity ◥ -->
           <div class="col-6 col-md-5">
-            <h6 class="fw-bold">Capacity</h6>
+
+            <h5>Capacity</h5>
+
             <dl class="row">
               <dt class="col-5 col-md-5 text-secondary">translation</dt>
               <dd class="col-7 col-md-7">2,000</dd>
@@ -351,26 +410,25 @@
               <dd class="col-7 col-md-7">4,000</dd>
             </dl>
           </div>
-          <!-- service done -->
-        </div>
+          <!-- @note ▯▯▮ SERVICE > capacity ◢ -->
 
+          <!-- @note ▯▯▮ SERVICE > subject matter and chart ◥ -->
 
-        <!-- @note subject matter & chart -->
-        <div class="row">
+          <!-- spacer -->
+          <div class="col-12 col-md-2"></div>
 
-          <!-- @note spacer -->
-          <div class="col-12 col-md-2">
-          </div>
           <div class="col-12 col-md-10">
-            <h6 class="fw-bold">Subject Matter</h6>
+            <h5>Subject Matter</h5>
+
             <figure>
               <img src="expertise-mapping.circle.light.svg" class="img-fluid ps-2 pe-2 pb-2">
               <img src="expertise-mapping.circle.dark.svg" class="img-fluid ps-2 pe-2 pb-2">
-              <figcaption class="figure-caption text-center">1 million words translation & proofreading by subject
+              <figcaption class="figure-caption text-center">One million words translation and proofreading by subject
                 matter</figcaption>
             </figure>
+            <!-- @note ▯▯▮ SERVICE > subject matter chart ◢ -->
 
-            <!-- list down key translations for each category -->
+            <!-- @note ▯▯▮ SERVICE > translation sample ◥ -->
             <div class="row">
               <div class="accordion accordion-flush mb-3" id="accordionPanelsStayOpenExample">
 
@@ -378,9 +436,9 @@
                 <div class="accordion-item">
 
                   <div class="accordion-header">
-                    <h6 class="accordion-button text-body-secondary p-1 m-0 bg-body text-opacity-75 shadow-none"
-                      type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
-                      aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    <h6 class="accordion-button text-body-secondary p-1 m-0 bg-body shadow-none" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                      aria-controls="panelsStayOpen-collapseOne">
                       <i class="bi bi-server"></i>
                       &nbsp;IT Infrastructure
                     </h6>
@@ -397,15 +455,19 @@
                             <th class="text-body-tertiary">Format</th>
                           </tr>
                         </thead>
-                        <tbody>
+                        <tbody class="table-group-divider">
                           <tr>
                             <td class="col-1"><small>Oracle</small></td>
-                            <td class="text-truncate" style="max-width: 96px;"><sup class="text-body-tertiary">EN</sup>
+                            <td class="text-truncate" style="max-width: 96px;">
+                              <sup class="text-body-tertiary">EN</sup>
                               <a href="https://blogs.oracle.com/cloud-infrastructure/post/transit-on-premises-network-traffic-to-azure-through-oci-using-the-oci-azure-interconnect"
-                                target="_blank">Transit on-premises network traffic to Azure through OCI using the
-                                OCI-Azure Interconnect</a></br><sup class="text-body-tertiary">KO</sup> <a
-                                href="https://blogs.oracle.com/korea/post/transit-on-premises-network-traffic-to-azure-through-oci-using-the-oci-azure-interconnect-kr"
+                                target="_blank">
+                                Transit on-premises network traffic to Azure through
+                                OCI using the OCI-Azure Interconnect</span></a></br>
+                              <sup class="text-body-tertiary">KO</sup>
+                              <a href="https://blogs.oracle.com/korea/post/transit-on-premises-network-traffic-to-azure-through-oci-using-the-oci-azure-interconnect-kr"
                                 target="_blank">OCI-Azure 상호 연결을 이용한 온프레미스와 Azure 사이의 네트워크 트래픽 교환</a>
+
                             </td>
                             <td class="col-2"><small>social media</small></td>
                           </tr>
@@ -461,8 +523,7 @@
                 <div class="accordion-item">
 
                   <div class="accordion-header">
-                    <h6
-                      class="accordion-button text-body-secondary p-1 m-0 bg-body text-opacity-75 border-0 collapsed shadow-none"
+                    <h6 class="accordion-button text-body-secondary p-1 m-0 bg-body border-0 collapsed shadow-none"
                       type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
                       aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
                       <i class="bi bi-bank2"></i>
@@ -526,10 +587,9 @@
                 <div class="accordion-item">
 
                   <div class="accordion-header">
-                    <h6
-                      class="accordion-button text-body-secondary p-1 m-0 bg-body text-opacity-75 shadow-none collapsed"
-                      type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
-                      aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    <h6 class="accordion-button text-body-secondary p-1 m-0 bg-body shadow-none collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseThree">
                       <i class="bi bi-cart-fill"></i>
                       &nbsp;e-commerce
                     </h6>
@@ -600,10 +660,9 @@
                 <div class="accordion-item">
 
                   <div class="accordion-header">
-                    <h6
-                      class="accordion-button text-body-secondary p-1 m-0 bg-body text-opacity-75 shadow-none collapsed"
-                      type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive"
-                      aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                    <h6 class="accordion-button text-body-secondary p-1 m-0 bg-body shadow-none collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseFive">
                       <i class="bi bi-terminal-fill"></i>
                       &nbsp;UI/UX, API documentation
                     </h6>
@@ -640,10 +699,9 @@
                 <div class="accordion-item">
 
                   <div class="accordion-header">
-                    <h6
-                      class="accordion-button text-body-secondary p-1 m-0 bg-body text-opacity-75 shadow-none collapsed"
-                      type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix"
-                      aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                    <h6 class="accordion-button text-body-secondary p-1 m-0 bg-body shadow-none collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseSix">
                       <i class="bi bi-file-earmark-text-fill"></i>
                       &nbsp;ETC.
                     </h6>
@@ -657,19 +715,11 @@
 
               </div>
             </div>
+            <!-- @note ▯▯▮ SERVICE > translation sample ◢ -->
 
-          </div>
-        </div>
-        <!-- subject matter ends -->
+            <!-- @note ▯▯▮ SERVICE > skills ◥ -->
+            <h5>Experties</h5>
 
-        <!-- Software Skills -->
-        <div class="row">
-          <!-- spacer -->
-          <div class="col-12 col-md-2">
-          </div>
-
-          <div class="col-12 col-md-10">
-            <h6 class="fw-bold">Skills</h6>
             <dl class="row">
               <dt class="col-12 col-md-3 text-secondary">Translation tool</dt>
               <dd class="col-12 col-md-9">Trados Studio, memoQ, OmegaT, QTLinguist, Okapi applications, Smartcat,
@@ -688,95 +738,30 @@
               </dd>
 
               <dt class="col-12 col-md-3 text-secondary">Programming</dt>
-              <dd class="col-12 col-md-9">Java, HTML, CSS, Javascript, GitHub</dd>
+              <dd class="col-12 col-md-9">Java,
+                HTML, CSS, Javascript, GitHub</dd>
 
             </dl>
+            <!-- @note ▯▯▮ SERVICE > skills ◢ -->
+
           </div>
-        </div>
-        <!-- Software Skills ends -->
+          <!-- @note ▯▯▮ SERVICE > subject matter & chart ◢ -->
 
-
-
-
-
-
-        <!-- @note Career section starts-->
-        <div class="row mt-4">
-
-          <!-- career heading open -->
+          <!-- @note ▯▯▮ CAREER header ◥ -->
           <div class="col-12 col-md-2">
             <h4 class="text-lg-end fs-3">Career</h4>
           </div>
-          <!-- career heading closed -->
+          <!-- @note ▯▯▮ CAREER header ◢ -->
 
           <!-- career contents starts -->
           <div class="col-12 col-md-10">
 
-            <!-- career work experience -->
-            <h6 class="fw-bold visually-hidden">
+            <!-- employment heading -->
+            <h5>
               <span class="material-symbols-outlined align-bottom">
                 badge</span>
               Work Experience
-            </h6>
-            <table class="table table-hover table-sm visually-hidden">
-              <thead>
-                <tr class="visually-hidden">
-                  <th class="text-body-tertiary">Term</th>
-                  <th class="text-body-tertiary">Title</th>
-                  <th class="text-body-tertiary">Location</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="col-3 text-body-secondary"><small>SEP 2022 - present</small></td>
-                  <td class="col">Freelance translator (EN→KO)</td>
-                  <td class="col-3 text-body-tertiary">
-                    <small>Remote</small>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td class="col-3 text-body-secondary"><small>FEB 2021 - SEP 2022</small></td>
-                  <td class="col">Korean Translation Specialist, Oracle
-                  </td>
-                  <td class="col-3 text-body-tertiary">
-                    <small>Malaysia</small>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td class="col-3 text-body-secondary"><small>APR 2013 - MAY 2019</small></td>
-                  <td class="col">Lecturer,
-                    Faculty of Creative Multimedia,
-                    Multimedia University
-                  </td>
-                  <td class="col-3 text-body-tertiary">
-                    <small>Cyberjaya,</br>
-                      Malaysia</small>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td class="col-3 text-body-secondary"><small>MAR 2012 - MAR 2013</small></td>
-                  <td class="col">Postdoctoral Researcher, Global School of Media,
-                    Soongsil University
-                  </td>
-                  <td class="col-3 text-body-tertiary">
-                    <small>Seoul,</br>
-                      South Korea</small>
-                  </td>
-                </tr>
-
-
-              </tbody>
-            </table>
-
-            <!-- employment heading -->
-            <h6 class="fw-bold">
-              <span class="material-symbols-outlined align-bottom">
-                badge</span>
-              Employment
-            </h6>
+            </h5>
             <!-- employment heading closed -->
 
             <!-- work experience -->
@@ -785,15 +770,37 @@
               <!-- employment accordion -->
               <div class="accordion accordion-flush mb-3" id="careerwork">
 
+                <!-- accordion item 0 -->
+                <div class="accordion-item">
+
+                  <div class="accordion-header">
+                    <p class="accordion-button collapsed text-body-secondary p-1 m-0 bg-body  list-unstyled shadow-none"
+                      type="button" data-bs-toggle="collapse" data-bs-target="#work0" aria-expanded="false"
+                      aria-controls="work0">
+                      Freelance Linguist</p>
+                    <p class="small ms-1 text-body-tertiary">2022 OCT - present, Malaysia</p>
+                  </div>
+
+                  <div id="work0" class="accordion-collapse collapse" data-bs-parent="#careerwork">
+                    <div class="accordion-body">
+
+                    </div>
+
+                  </div>
+                </div>
+                <!-- item 0 closed  -->
+
+
                 <!-- accordion item 1 -->
                 <div class="accordion-item">
 
                   <div class="accordion-header">
-                    <p class="accordion-button collapsed text-body-secondary p-1 m-0 bg-body text-opacity-75 list-unstyled shadow-none"
+                    <p class="accordion-button collapsed text-body-secondary p-1 m-0 bg-body  list-unstyled shadow-none"
                       type="button" data-bs-toggle="collapse" data-bs-target="#work1" aria-expanded="false"
                       aria-controls="work1">
-                      Korean Translation Specialist, Oracle Malaysia<br>
-                    <p class="small ms-1 text-body-tertiary">2021 FEB - 2022 SEP</p>
+                      Korean Translation Specialist, Oracle
+                    </p>
+                    <p class="small ms-1 text-body-tertiary">2021 FEB - 2022 SEP, Malaysia</p>
                   </div>
 
                   <div id="work1" class="accordion-collapse collapse" data-bs-parent="#careerwork">
@@ -829,122 +836,166 @@
 
                   </div>
                 </div>
+                <!-- item 1 closed  -->
 
                 <!-- accordion item 2 -->
                 <div class="accordion-item">
 
                   <div class="accordion-header">
-                    <p class="accordion-button collapsed p-1 m-0 text-body-secondary text-opacity-75 list-unstyled shadow-none bg-body"
+                    <p class="accordion-button collapsed p-1 m-0 text-body-secondary  list-unstyled shadow-none bg-body"
                       type="button" data-bs-toggle="collapse" data-bs-target="#work2" aria-expanded="false"
                       aria-controls="work2">
-                      Lecturer at Multimedia University, Malaysia<br>
-                    <p class="small ms-1 text-body-tertiary">2013 APR - 2019 MAY
+                      Lecturer, Multimedia University
+                    </p>
+                    <p class="small ms-1 text-body-tertiary">
+                      2013 APR - 2019 MAY, Malaysia
                     </p>
                   </div>
 
                   <div id="work2" class="accordion-collapse collapse" data-bs-parent="#careerwork">
                     <div class="accordion-body">
+
                       <h6>Responsibilities</h6>
                       <ol>
-                        <li>Top priority pages on oracle.com/kr including vendor management and quality assurance.
-                        </li>
-                        <li>Core marketing materials for new cloud products and services including campaign brochures,
-                          white-papers, analyst reports, press releases, blogs, etc.</li>
-                        <li>
-                          Subtitles for major Oracle event videos from keynotes to technical hands-on including Oracle
-                          Database World, Oracle Cloud Virtual Summit, customer spotlights, etc.</li>
+                        <li>Design and facilitate the courses in media art and theory</li>
+                        <li>Publish research articles</li>
+                        <li>Fund-raising in the field of the creative industry and culture technology</li>
+                        <li>Fulfill the necessary administrative duties to improve the quality of education in the
+                          university</li>
                       </ol>
 
-                      <h6>Major Achievements</h6>
+                      <h6>Roles</h6>
                       <ol>
-                        <li>Planned and led the 3 month intensive re-work of existing Korean translations for
-                          oracle.com/kr which resulted in the high praise from the head of Oracle Korea Marketing.
+                        <li> Research and Innovation Committee in the faculty</li>
+                        <li> Academic Cluster Committee Member in the faculty</li>
+                        <li>Faculty Representative in the Library Committee</li>
+                        <li>Open Distance Learning Content Developer Body(2nd Phase) Committee Member in the faculty
                         </li>
-
-                        <li>Established the multiple style guides for different channels for optimal and effective
-                          engagement with customers.</li>
-
-                        <li>Established and improved the internal quality assurance workflow.</li>
-
-                        <li>Fixed the faulty translation memory with the machine-translation friendly entries based on
-                          how
-                          In-house Machine Translation system works.</li>
-
-                        <li>Create a automated workflow and relevant documentations to improve the internal
-                          translation
-                          platform, quality assurance workflow.</li>
                       </ol>
+
                     </div>
                   </div>
-
-
-
-
                 </div>
+                <!-- item 2 closed  -->
+
+                <!-- accordion item 3 -->
+                <div class="accordion-item">
+
+                  <div class="accordion-header">
+                    <p class="accordion-button collapsed p-1 m-0 text-body-secondary  list-unstyled shadow-none bg-body"
+                      type="button" data-bs-toggle="collapse" data-bs-target="#work3" aria-expanded="false"
+                      aria-controls="work3">
+                      Postdoctoral Researcher, Global School of Media, Soongsil University
+                    </p>
+                    <p class="small ms-1 text-body-tertiary">
+                      2013 APR - 2019 MAY, Seoul, South Korea
+                    </p>
+                  </div>
+
+                  <div id="work3" class="accordion-collapse collapse" data-bs-parent="#careerwork">
+                    <div class="accordion-body">
+
+                      <ol>
+                        <li>Publish the research articles in the field of media art and theory</li>
+                        <li>Fund-raising from the government and industrial bodies in the above-mentioned field of
+                          research</li>
+                      </ol>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- item 3 closed  -->
+
+                <!-- accordion item 4 -->
+                <div class="accordion-item">
+
+                  <div class="accordion-header">
+                    <p class="accordion-button collapsed p-1 m-0 text-body-secondary  list-unstyled shadow-none bg-body"
+                      type="button" data-bs-toggle="collapse" data-bs-target="#work4" aria-expanded="false"
+                      aria-controls="work4">
+                      Lecturer, Global School of Media, Soongsil University
+                    </p>
+                    <p class="small ms-1 text-body-tertiary">
+                      2008 JUL - 2013 JUL, Seoul, South Korea
+                    </p>
+                  </div>
+
+                  <div id="work4" class="accordion-collapse collapse" data-bs-parent="#careerwork">
+                    <div class="accordion-body">
+                      <ol>
+                        <li>Design and facilitate the courses in media art and theory</li>
+                        <li>
+                          Publish research articles</li>
+                        <li>
+                          Raise the fund from the government and industry bodies in the area of culture technology and
+                          media art and theory</li>
+                      </ol>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- item 4 closed  -->
+
               </div>
               <!-- emploment accordion closed -->
 
             </div>
             <!-- work experience closed -->
 
+            <!-- education heading -->
+            <h5>
+              <span class="material-symbols-outlined align-bottom">
+                school</span>
+              Education
+            </h5>
+            <!-- education heading closed -->
+
+            <!-- education list -->
+            <p class="p-1 m-0 text-body-secondary list-unstyled shadow-none bg-body">
+              Ph.D. in Media Engineering, Soongsil University
+            </p>
+            <p class="small ms-1 text-body-tertiary">
+              2008 MAR - 2011 AUG, Seoul, South Korea
+            </p>
+
+            <p class="p-1 m-0 text-body-secondary list-unstyled shadow-none bg-body">
+              B.A. in Korean Language and Literature, Soongsil university
+            </p>
+            <p class="small ms-1 text-body-tertiary">
+              1996 MAR - 2007 AUG, Seoul, South Korea
+            </p>
+            <!-- education list closed -->
+
           </div>
           <!-- career content closed -->
 
         </div>
-        <!-- career section closed -->
+        <!-- @note ◨ RIGHT < content ◢ -->
 
       </div>
-      <!-- container closed -->
+      <!-- @note ◨ RIGHT COL ◢ -->
 
-      <!-- footer @note footer  -->
-      <!-- icons -->
-      <!-- icons -->
-      <div class="container">
-        <footer class="d-flex justify-content-between align-items-center py-3 my-4 border-top">
-          <div class="col-md-4 d-flex align-items-center">
-            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"><i
-                class="bi bi-bootstrap-fill"></i></a>
-            <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2023 김용근 / Yonggeun Kim</span>
-          </div>
+    </div>
+    <!-- @note ▣ PAGE ◢ -->
 
-          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-1"><a class="text-body-secondary" href="#"><i class="bi bi-linkedin"></i></a></li>
-          </ul>
-        </footer>
-      </div>
-      <footer class="footer mt-auto py-3 bg-body-tertiary">
-        <div class="container">
-          <span class="text-body-secondary">Place sticky footer content here.</span>
-        </div>
-      </footer>
+  </div>
+  <!-- @note ▢ MAIN CONTAINTER ◢ -->
 
 
+  <!-- @note ⊟ footer ◥ -->
+  <footer class="footer mt-auto py-3 bg-body-tertiary">
+    <div class="container text-center small opacity-50">
+      <span class="text-body-secondary"><i class="bi bi-c-circle"></i>
+        Yonggeun Kim / 김용근</span>
+    </div>
+  </footer>
 
-
-      <!-- <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-          <div class="col-md-4 d-flex align-items-center">
-            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
-            </a>
-            <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2023 Company, Inc</span>
-          </div>
-      
-          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
-          </ul>
-        </footer>
-      </div> -->
-
-      <!-- footer ends  -->
-
-      <!-- additional JS -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+  <!-- @note JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 
 </body>
+<!-- @note BODY ◢ -->
 
 </html>
